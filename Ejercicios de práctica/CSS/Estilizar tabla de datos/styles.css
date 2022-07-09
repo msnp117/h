@@ -1,0 +1,36 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: arial, helvetica, sans-serif;
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	width: 800px;
+	margin: 100px auto;
+}
+
+td, th {
+	border:  solid 1px #ccc;
+	padding: 5px;
+}
+
+tr:nth-child(even){      /*filas par*/
+	background-color: #eee;
+}
+
+td:nth-child(n+3),/*a partir del elemento 3*/
+th:nth-child(n+3){
+	text-align: center;
+}
+tbody tr:hover{
+	background-color: lightblue;
+}
+
+thead {
+	background-color: black;
+	color: white;
+	position: sticky;
+	top: 0;
+}

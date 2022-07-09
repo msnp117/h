@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://kit.fontawesome.com/479e50c610.js" crossorigin="anonymous"></script>
+	<title>Menu Responsive</title>
+</head>
+<body>
+	<nav>
+		<div class="mobile">
+			<div class="header">
+				<div class="logo">Logo</div>
+				<div class="more">
+					<button id="bMore"><i class="fa-solid fa-bars"></i></button>
+				</div>
+			</div>
+			<div id="links" class="links collapsed">
+				<a href="#">Service</a>
+				<a href="#">About</a>
+				<a href="#">Contact</a>
+				<a href="#">Search</a>
+				<a href="#">Sign up</a>
+				<a href="#">Log in</a>
+			</div>
+		</div>
+
+		<div class="desktop">
+			<div class="logo">Logo</div>
+			<div class="primary">
+				<a href="#">Service</a>
+				<a href="#">About</a>
+				<a href="#">Contact</a>
+			</div>
+			<div class="secondary full">
+				<a href="#">Search</a>
+				<a href="#">Sign up</a>
+				<a href="#">Log in</a>
+			</div>
+
+			<div class="secondary mini">
+				<a href="#" class="more">More</a>
+				<div class="submenu">
+					<a href="#">Search</a>
+					<a href="#">Sign up</a>
+					<a href="#">Log in</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<script>
+		const bMore = document.querySelector('#bMore');
+		const links = document.querySelector('#links');
+
+		bMore.addEventListener('click', e => {
+			links.classList.toggle('collapsed');	
+		});
+	</script>
+</body>
+</html>

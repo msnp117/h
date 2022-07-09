@@ -1,0 +1,32 @@
+body {
+	background-color: #999;
+}
+nav {
+	background-color: #333;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 50px;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	gap: 30px;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+}
+
+h1 {
+	color: blue;
+	font-size: 50px;
+	text-align: center;
+	filter: drop-shadow(2px 3px 2px #333);
+}
+
+p {
+	font-size: 20px;
+}
